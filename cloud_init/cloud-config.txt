@@ -1,0 +1,16 @@
+#cloud-config
+password: ubuntu
+chpasswd: { expire: False }
+ssh_pwauth: True
+write_files:
+- content: |
+    network:
+      version: 2
+      ethernets:
+        ens3:
+          dhcp4: true
+        ens4:
+          dhcp4: true
+  path: /etc/netplan/51-custom-network-config.yaml
+runcmd:
+- sudo netplan apply

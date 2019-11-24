@@ -1,0 +1,9 @@
+"name": "minio"
+"summary": "A charm that runs the MinIO storage server"
+"maintainer": "benjamin <b.ertl@agentscape.de>"
+"description": |
+  This is a charm that runs the MinIO storage server.
+"tags":
+- "misc"
+"series":
+- "bionic"

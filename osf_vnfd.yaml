@@ -1,0 +1,61 @@
+vnfd:vnfd-catalog:
+  vnfd:
+  - connection-point:
+    - name: eth0
+      type: VPORT
+    - name: eth1
+      type: VPORT
+    description: 'Object Storage Function (OSF)'
+    id: osf
+    internal-vld: []
+    mgmt-interface:
+      cp: eth0
+    name: osf
+    short-name: osf
+    vdu:
+    - cloud-init-file: cloud-config.txt
+      count: '2'
+      description: ''
+      id: osf
+      image: 'Ubuntu 18.04.3 LTS'
+      interface:
+      - external-connection-point-ref: eth0
+        name: eth0
+        type: EXTERNAL
+        virtual-interface:
+          bandwidth: 0
+          type: VIRTIO
+          vpci: 0000:00:0a.0
+      - external-connection-point-ref: eth1
+        name: eth1
+        type: EXTERNAL
+        virtual-interface:
+          bandwidth: 0
+          type: VIRTIO
+          vpci: 0000:00:0b.0
+      internal-connection-point: []
+      monitoring-param: []
+      name: osf
+      vm-flavor:
+        memory-mb: 4096
+        storage-gb: 21
+        vcpu-count: 2
+    version: '1.0'
+    vnf-configuration:
+      initial-config-primitive:
+      - name: config
+        seq: '1'
+        parameter:
+        - name: ssh-hostname
+          value: <rw_mgmt_ip>
+        - name: ssh-username
+          value: ubuntu
+        - name: ssh-password
+          value: ubuntu
+      - name: deploy
+        seq: '2'
+        parameter:
+        - name: charmlist
+          value: 'minio'
+      juju:
+        charm: deployer

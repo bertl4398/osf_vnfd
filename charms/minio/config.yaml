@@ -1,0 +1,9 @@
+"options":
+  "access-key":
+    "type": "string"
+    "description": "The MinIO server access key"
+    "default": "admin"
+  "secret-key":
+    "type": "string"
+    "description": "The MinIO server secret key"
+    "default": "123456789"

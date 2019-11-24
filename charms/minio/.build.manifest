@@ -1,0 +1,263 @@
+{
+  "layers": [
+    {
+      "rev": "fcdcea4e5de3e1556c24e6704607862d0ba00a56",
+      "url": "layer:options"
+    },
+    {
+      "rev": "1d2489bff56daf2f8d1c06ee9248bb0094e4ad49",
+      "url": "layer:basic"
+    },
+    {
+      "rev": "1ab56c7ba007257c3dd9e63b5ed20345d595bed8",
+      "url": "minio"
+    }
+  ],
+  "signatures": {
+    ".build.manifest": [
+      "build",
+      "dynamic",
+      "unchecked"
+    ],
+    ".gitignore": [
+      "layer:basic",
+      "static",
+      "0da5c4dcda27cd6406e5bb81cbf68ddccaf728ac764ec15053a165c1449d87d9"
+    ],
+    "LICENSE": [
+      "layer:basic",
+      "static",
+      "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    ],
+    "Makefile": [
+      "layer:basic",
+      "static",
+      "b7ab3a34e5faf79b96a8632039a0ad0aa87f2a9b5f0ba604e007cafb22190301"
+    ],
+    "README.ex": [
+      "minio",
+      "static",
+      "eb25333fb6ee2abc2d5dde329dfd6b4b2a6dd5516094e75354fb6cd84010afad"
+    ],
+    "README.md": [
+      "layer:basic",
+      "static",
+      "92dcf485a5356407aa1c92da864dfc14c14bb6b9b15879fdcf75dd7f7a29c0bf"
+    ],
+    "bin/charm-env": [
+      "layer:basic",
+      "static",
+      "458c53532c19ee357cbf4209ccc7d811810718ba0ea3b0588b3d3ef040a44b8e"
+    ],
+    "bin/layer_option": [
+      "layer:options",
+      "static",
+      "e959bf29da4c5edff28b2602c24113c4df9e25cdc9f2aa3b5d46c8577b2a40cc"
+    ],
+    "config.yaml": [
+      "minio",
+      "dynamic",
+      "b368da228dd21d7d0feb2d54499e2cf6e6e09ec68adccd9674d90d8330c48a06"
+    ],
+    "copyright": [
+      "layer:basic",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "copyright.layer-options": [
+      "layer:options",
+      "static",
+      "f6740d66fd60b60f2533d9fcb53907078d1e20920a0219afce7182e2a1c97629"
+    ],
+    "hooks/config-changed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/hook.template": [
+      "layer:basic",
+      "static",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/install": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/leader-elected": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/leader-settings-changed": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/post-series-upgrade": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/pre-series-upgrade": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/start": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/stop": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/update-status": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "hooks/upgrade-charm": [
+      "layer:basic",
+      "dynamic",
+      "2b693cb2a11594a80cc91235c2dc219a0a6303ae62bee8aa87eb35781f7158f7"
+    ],
+    "icon.svg": [
+      "minio",
+      "static",
+      "d20624e9389af6506a8d8a69ac9bba4d41709601b624c0875fd7d6717b395088"
+    ],
+    "layer.yaml": [
+      "minio",
+      "dynamic",
+      "6a266a97de6dc0b33695cb954acf283eb755d22bd80b611a17a29add3da54d5d"
+    ],
+    "lib/charms/layer/__init__.py": [
+      "layer:basic",
+      "static",
+      "dfe0d26c6bf409767de6e2546bc648f150e1b396243619bad3aa0553ab7e0e6f"
+    ],
+    "lib/charms/layer/basic.py": [
+      "layer:basic",
+      "static",
+      "445652dbaa1f0b84a7215da185bcbdff097bb9bbbce11b4c2dbbff90f77719a9"
+    ],
+    "lib/charms/layer/execd.py": [
+      "layer:basic",
+      "static",
+      "fda8bd491032db1db8ddaf4e99e7cc878c6fb5432efe1f91cadb5b34765d076d"
+    ],
+    "lib/charms/layer/options.py": [
+      "layer:options",
+      "static",
+      "8ae7a07d22542fc964f2d2bee8219d1c78a68dace70a1b38d36d4aea47b1c3b2"
+    ],
+    "metadata.yaml": [
+      "minio",
+      "dynamic",
+      "6f5a77b8cf56731454853a27e9f005173b00150228b9f165b3f5a3ea22a9270d"
+    ],
+    "reactive/__init__.py": [
+      "layer:basic",
+      "static",
+      "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    ],
+    "reactive/minio.py": [
+      "minio",
+      "static",
+      "5a6a94792b5d12c56d7a5818d879812f07b6b6eac14355c15d1eff0b40ec3607"
+    ],
+    "requirements.txt": [
+      "layer:basic",
+      "static",
+      "0f1c70d27e26005a96d66ad54482877ae20f7737693c833e29dd72bd6ac24892"
+    ],
+    "templates/minio.service.j2": [
+      "minio",
+      "static",
+      "b18ccbee520651f6ae426b4fc3c9826c936ed505889add79c1bea706f8c08885"
+    ],
+    "tests/00-setup": [
+      "minio",
+      "static",
+      "111c079b81d260bbcd716dcf41672372a4cf4aaa14154b6c3055deeedae37a06"
+    ],
+    "tests/10-deploy": [
+      "minio",
+      "static",
+      "643274e3ef36d3f8b39be8785043f28947134977978cac06c3411781d3488127"
+    ],
+    "version": [
+      "minio",
+      "dynamic",
+      "672e561e528d04799f84be96d23f408bc7824e2c34206dc6c975c41f4dc1689a"
+    ],
+    "wheelhouse/Jinja2-2.10.3.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "9fe95f19286cfefaa917656583d020be14e7859c6b0252588391e47db34527de"
+    ],
+    "wheelhouse/MarkupSafe-1.1.1.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "29872e92839765e546828bb7754a68c418d927cd064fd4708fab9fe9c8bb116b"
+    ],
+    "wheelhouse/PyYAML-5.1.2.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "01adf0b6c6f61bd11af6e10ca52b7d4057dd0be0343eb9283c878cf3af56aee4"
+    ],
+    "wheelhouse/Tempita-0.5.2.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "cacecf0baa674d356641f1d406b8bff1d756d739c46b869a54de515d08e6fc9c"
+    ],
+    "wheelhouse/charmhelpers-0.20.6.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "b1b38cfa4f8dbb67c92d9282f54522a57dc6a46e6f92e9e6d15132e6bbbc8718"
+    ],
+    "wheelhouse/charms.reactive-1.3.0.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "82d2c614c82d64bf56e913990f22663e5de64b99db15838abfd9a064f1cc2f51"
+    ],
+    "wheelhouse/netaddr-0.7.19.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "38aeec7cdd035081d3a4c306394b19d677623bf76fa0913f6695127c7753aefd"
+    ],
+    "wheelhouse/pip-18.1.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "c0a292bd977ef590379a3f05d7b7f65135487b67470f6281289a94e015650ea1"
+    ],
+    "wheelhouse/pyaml-19.4.1.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "c79ae98ececda136a034115ca178ee8bf3aa7df236c488c2f55d12f177b88f1e"
+    ],
+    "wheelhouse/setuptools-41.6.0.zip": [
+      "layer:basic",
+      "dynamic",
+      "6afa61b391dcd16cb8890ec9f66cc4015a8a31a6e1c2b4e0c464514be1a3d722"
+    ],
+    "wheelhouse/setuptools_scm-1.17.0.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "70a4cf5584e966ae92f54a764e6437af992ba42ac4bca7eb37cc5d02b98ec40a"
+    ],
+    "wheelhouse/six-1.13.0.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "30f610279e8b2578cab6db20741130331735c781b56053c59c4076da27f06b66"
+    ],
+    "wheelhouse/wheel-0.33.6.tar.gz": [
+      "layer:basic",
+      "dynamic",
+      "10c9da68765315ed98850f8e048347c3eb06dd81822dc2ab1d4fde9dc9702646"
+    ]
+  }
+}
